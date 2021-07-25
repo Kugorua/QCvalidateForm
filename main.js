@@ -4,25 +4,25 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message: "field is required"
         },
         {
             value: (value) => {
                 return  !(/^([^0-9]*)$/.test(value));
             },
-            message: "kí tự không chứa số"
+            message: "Không chứa kí tự số"
         },
         {
             value: (value) => {
                 return  (/[!@#$%^&*]/.test(value));
             },
-            message: "kí tự không !@#$%^&*"
+            message: "Không chứa kí !@#$%^&*"
         },
         {
             value: (value) => {
                 return  !(value.length >= 5 && value.length <= 50);
             }, 
-            message:  "kí tự từ 4-50"
+            message:  "Yêu cầu độ dài kí tự 4-50"
         },
     ],
     chucdanh: [
@@ -30,19 +30,19 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message:  "field is required"
         },
         {
             value: (value) => {
                 return  !(value.length >= 3 && value.length <= 50);
             }, 
-            message:  "kí tự từ 3-50"
+            message:  "Yêu cầu độ dài kí tự 3-50"
         },
         {
             value: (value) => {
                 return  (/[!@#$%^&*]/.test(value));
             },
-            message: "kí tự không !@#$%^&*"
+            message: "Không chứa kí !@#$%^&*"
         },
     ],
     tendn: [
@@ -52,7 +52,7 @@ let validateObj = {
                     return  (/^\d+$/.test(value)); 
                 }
             },
-            message: "kí tự không chứa số"
+            message: "Không chứa kí tự số"
         },
         {
             value: (value) => {
@@ -61,7 +61,7 @@ let validateObj = {
                  }
                
             },
-            message: "kí tự không !@#$%^&*"
+            message: "Không chứa kí !@#$%^&*"
         },
         {
             value: (value) => {
@@ -70,7 +70,7 @@ let validateObj = {
                  }
                
             }, 
-            message:  "kí tự từ 4-50"
+            message:  "Yêu cầu độ dài kí tự 4-50"
         },
         
         
@@ -80,25 +80,25 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message:  "field is required"
         },
         {
             value: (value) => {
                 return  (/^\d+$/.test(value));
             },
-            message: "kí tự không chứa số"
+            message: "Không chứa kí tự số"
         },
         {
             value: (value) => {
                 return  (/[!@#$%^&*]/.test(value));
             },
-            message: "kí tự không !@#$%^&*"
+            message: "Không chứa kí !@#$%^&*"
         },
         {
             value: (value) => {
                 return  !(value.length >= 4 && value.length <= 50);
             }, 
-            message:  "kí tự từ 4-50"
+            message:  "Yêu cầu độ dài kí tự 4-50"
         },
     ],
     email: [
@@ -106,20 +106,20 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message:  "field is required"
         },
         {
             value: (value) => {
                 return  !(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value));
             },
-            message: "không định dạng mail"
+            message: " Email không hợp lệ"
         },
         
         {
             value: (value) => {
                 return  !( value.length <= 40);
             }, 
-            message:  "kí tự  < 40"
+            message:  "Yêu cầu độ dài kí tự  < 40"
         },
     ],
     sdt: [
@@ -127,13 +127,13 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message:  "field is required"
         },
         {
             value: (value) => {
                 return  (/[!@#$%^&*]/.test(value));
             },
-            message: "kí tự không !@#$%^&*"
+            message: "Không chứa kí !@#$%^&*"
         },
         {
             value: (value) => {
@@ -148,7 +148,7 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message:  "field is required"
         },
         {
             value: (value) => {
@@ -162,7 +162,7 @@ let validateObj = {
             value: (value) => {
                 return value == "";
             },
-            message: "field không đễ trống"
+            message:  "field is required"
         },
         
         {
@@ -188,7 +188,7 @@ let validateObj = {
             value: (value) => {
                 return  !( value.length <= 500 && value.length >= 4);
             }, 
-            message:  "kí tự  4-500"
+            message:  "Yêu cầu độ dài kí tự 4-500"
         },
     ]
 
