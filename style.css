@@ -65,4 +65,9 @@
   border: none;
   background-color: #0d79ac;
   color: white;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #e81500;
 }
