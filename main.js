@@ -202,9 +202,6 @@ let isCheck = false;
 function isCheckValiadate() {
     isCheck = false;
     for (let i = 0; i < fieldValue.length; i++){
-        
-        // fieldValue[i].value = fieldValue[i].value.toUpperCase();
-        
         let validateObjItem = validateObj[fieldValue[i].name];
         if (fieldValue[i].name == "name") {
             fieldValue[i].value = fieldValue[i].value.toUpperCase(); 
