@@ -20,7 +20,7 @@ let validateObj = {
         },
         {
             value: (value) => {
-                return  !(value.length >= 5 && value.length <= 50);
+                return  !(value.length >= 4 && value.length <= 50);
             }, 
             message:  "Yêu cầu độ dài kí tự 4-50"
         },
