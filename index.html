@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">Thông tin đăng ký liên minh ONLINE</h1>
+      <div class="content">
+        <form class="form">
+          <div class="field">
+            <label class="field-name">1. Họ Tên *</label>
+            <input class="field-value field-name" name="name" type="text" />
+            <p class="message"></p>
+          </div>
+          <div class="field">
+            <label class="field-name">2. Chức danh *</label>
+            <input
+              class="field-value field-chuc-danh"
+              name="chucdanh"
+              type="text"
+            />
+            <p class="message"></p>
+          </div>
+          <div class="field">
+            <label class="field-name">3. Tên doanh nghiệp</label>
+            <input class="field-value field-ten-dn" name="tendn" type="text" />
+            <p class="message"></p>
+          </div>
+          <div class="field">
+            <label class="field-name">4. Địa chỉ *</label>
+            <input
+              class="field-value field-dia-chi"
+              name="ten_dia_chi"
+              type="text"
+            />
+            <p class="message"></p>
+          </div>
+          <div class="field">
+            <label class="field-name">5. Email *</label>
+            <input class="field-value field-email" name="email" type="text" />
+            <p class="message"></p>
+          </div>
+          <div class="field">
+            <label class="field-name">6. Số điện thoại *</label>
+            <input class="field-value field-sdt" name="sdt" type="text" />
+            <p class="message"></p>
+          </div>
+          <div class="field">
+            <label class="field-name">7. Website của bạn *</label>
+            <input class="field-value field-web" name="web" type="text" />
+            <p class="message"></p>
+          </div>
+          <div class="field field-full">
+            <label class="field-name"
+              >8. Ngành nghề lĩnh vực kinh doanh *</label
+            >
+            <textarea
+              class="field-value field_nganh_nghe"
+              name="nganhnghe"
+              type="text"
+              cols="30"
+              rows="4"
+            ></textarea>
+            <p class="message"></p>
+          </div>
+          <div class="btn-wrap">
+            <button id="submit" type="click">Click</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
